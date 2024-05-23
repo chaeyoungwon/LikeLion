@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outside {
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  z-index: 100;
+  background: black;
+}
+
+.logo {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menubar {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 50px;
+  font-size: 16px;
+  background: radial-gradient(circle, #fcba00 0%, rgba(148, 233, 208, 0) 50%);
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: blur(1.5px);
+  width: 90%;
+  padding: 10px 0;
+  border-bottom: 2.5px solid #fcba00;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  background-image: url(image/myImg.jpg);
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  color: transparent;
+  transform: translate(-80%, -50%);
+  top: 50%;
+}
+
+.circle:hover {
+  display: flex;
+  color: white;
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.introduce {
+  display: flex;
+  text-shadow: 0 0 15px #fcba00;
+  font-size: 16px;
+  right: 20%;
+  position: absolute;
+  flex-direction: column;
+  text-align: left;
+  line-height: 200%;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.imgcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.info {
+  display: flex;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px 0 0 0;
+  line-height: 200%;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.maruimg {
+  width: 200px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.guitarimg {
+  width: 200px;
+  margin: 10px;
+  height: 330px;
+  border-radius: 50px;
+}
+
+.tripimg {
+  width: 200px;
+  margin: 15px;
+  height: 300px;
+  border-radius: 50px;
+}
