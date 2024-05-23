@@ -1,0 +1,285 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #999999;
+}
+
+input {
+  background-color: #f2f3f6;
+  padding: 7px;
+  border: none;
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.chatbtn {
+  border: 1px solid #c3c3c3;
+  border-radius: 6px;
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  background-color: #ffe2d2;
+  overflow: hidden;
+}
+
+.banner-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+  margin: 5px 0;
+  line-height: 20px;
+}
+
+.banner-detail {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-img {
+  margin-left: 180px;
+  width: 550px;
+  height: 250px;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.uploadbtn {
+  display: flex;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6f0f;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  margin: 25px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  width: 70px;
+  height: auto;
+  margin: 0 15px 10px 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.banner-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  background-image: url("../images/header-image.png");
+  object-fit: contain;
+}
+
+.upload-container {
+  display: flex;
+  width: 55%;
+  justify-content: center;
+  margin: 50px 0 10px 0;
+  flex-direction: column;
+}
+
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.container-title {
+  font-size: 25px;
+  max-width: 1000px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.upload-img {
+  display: flex;
+  object-fit: cover;
+  width: 108px;
+  height: 108px;
+  border-radius: 15px;
+}
+
+.post {
+  width: 50%;
+  margin-bottom: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  flex-direction: row;
+}
+
+.postInfo {
+  display: flex;
+  margin: 0 15px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 18px;
+  padding: 3px;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #868b94;
+  font-weight: 200;
+  padding: 3px;
+}
+
+.price {
+  font-size: 16px;
+  padding: 3px;
+  font-weight: 700;
+}
+
+.banner2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  padding: 1.75rem 1.5rem;
+  border-radius: 10px;
+  background-color: #f7f1eb;
+}
+
+.freebtn {
+  background-color: #fa6616;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.contactbtn {
+  background-color: #ff6f0f33;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 5px;
+  color: #fa6616;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.banner-info2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-title2 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.banner-img2 {
+  width: 80px;
+  height: 80px;
+}
+
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  li {
+    font-size: 16px;
+  }
+  .banner-title {
+    font-size: 28px;
+  }
+  .header-img {
+    margin-left: 100px;
+  }
+  .banner-detail {
+    margin-left: 13%;
+  }
+  .upload-container {
+    width: 70%;
+  }
+  .banner2 {
+    width: 70%;
+  }
+}
