@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0; /*화면의 중앙에 배치하는 속성들*/
+  background-color: black;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 20px;
+  width: 30%;
+  height: 60%;
+  color: white;
+}
+
+.addbox {
+  /*오늘의 할 일 추가하기 영역 스타일*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.input {
+  /*투두리스트 입력받는 영역 스타일*/
+  padding: 0 15px;
+  width: 210px;
+  height: 40px;
+  border: none;
+  font-size: 13px;
+  border-radius: 10px;
+  color: black;
+}
+
+#addbtn {
+  /*+ 버튼 스타일*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  margin: 0 0 0 10px;
+  font-weight: 700;
+  border-radius: 100%;
+  background-color: rgb(255, 183, 74);
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.list {
+  /*투두리스트들이 추가되는 영역*/
+  display: flex;
+  width: 250px;
+  font-size: 13px;
+  max-height: 350px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+h4 {
+  /*오늘의 날짜 표현 영역*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.todo-form {
+  /*더하기 버튼 클릭 시 하단에 추가되는 투두리스트 스타일 */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.checkbox {
+  /*체크박스 스타일*/
+  margin-right: 10px;
+}
+
+.delete-btn {
+  /*삭제 버튼 스타일*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(130, 255, 163);
+  color: #fff;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px 0 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scrap-btn {
+  /*스크랩 버튼 스타일*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 230, 130);
+  color: #fff;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 0 2px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlight {
+  /*스크랩 버튼 클릭 시 스타일*/
+  background-color: rgb(254, 239, 177);
+  border-radius: 5px;
+}
